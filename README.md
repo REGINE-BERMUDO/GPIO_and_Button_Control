@@ -9,3 +9,4 @@
 | Released     | HIGH           | OFF           | ON              |
 | Pressed      | LOW            | ON            | OFF             |
 
+On reset: both LEDs should immediately show the released state (LED1 off, LED2 on) since setup() sets that explicitly, and the pull-up prevents the pin from floating/reading randomly when the button isn't pressed.
